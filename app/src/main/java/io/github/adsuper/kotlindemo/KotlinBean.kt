@@ -5,5 +5,6 @@ package io.github.adsuper.kotlindemo
  * 时间：2017年08月09日
  * 说明：一个简单的 javaBean
  */
-class KotlinBean(name: String, age: Int) {
+class KotlinBean(var name: String, var age: Int) {
+    val data: String get() = name + age
 }
